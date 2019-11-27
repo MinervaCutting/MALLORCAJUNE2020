@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Anna Iakushkova, MAXIMICE" />
+
+
+<title>Incentive for AVON best performers</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="FORMATO.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CE Events</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Quotation</a>
+</li>
+<li>
+  <a href="about.html">Credentials</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Incentive for AVON best performers</h1>
+<h4 class="author">Anna Iakushkova, MAXIMICE</h4>
+<h4 class="date">June 23rd to 27th, 2020</h4>
+
+</div>
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="LOGO.png" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script>
+<div id="accommodation" class="section level1">
+<h1>Accommodation</h1>
+<div id="main-hotel-nixe-palace" class="section level2">
+<h2>Main Hotel: Nixe Palace</h2>
+<iframe src="NIXE PALACE/NIXE PALACE.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<p></br></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<ul>
+<ul>
+<li><p>Twin room, including breakfast 280€ VAT inc (rates per room and night)</p>
+<p><em>The hotel has 36 twin rooms (separated beds)</em></p></li>
+<li><p>Touristic tax: 4,4€ VAT inc per person and night</p>
+<p><em>If we contract a minimum if 35 rooms, the hotel will offer 1 room foc for Maximice staff and 1 upgrade foc</em></p></li>
+<li><p>Lunch menus, including non alcoholic drinks from: 53€ VAT inc</p>
+</ul>
+</p></li>
+</ul>
+</div>
+<style>
+
+.budget{
+background-color: #607D8B;
+color: white;
+padding: 10px;
+border: 1px solid black;
+margin-left: 5px;
+border-radius: 5px;
+font-style: italic;
+}
+</style>
+<p><br> <br></p>
+<p>Discover the hotel yourself:</p>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/X4h1_6X1uyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><br> <br></p>
+</div>
+<div id="alternative-hotels" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Alternative Hotels</h2>
+<div id="gran-melia-victoria" class="section level3">
+<h3>Gran Melia Victoria</h3>
+<iframe src="GRAN MELA VICTORIA/GRAN MELIA VICTORIA.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<p></br></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<ul>
+<ul>
+<li><p>Double room for single use, including breakfast: 223€ VAT inc (rates per room and night)</p>
+<ul>
+<li>Twin room, including breakfast 243€ VAT inc (rates per room and night)</li>
+</ul>
+<p><em>Separated beds</em></p></li>
+<li><p>Touristic tax: 4,4€ VAT inc per person and night</p></li>
+<li><p>Lunch menus, including non alcoholic drinks from: 53€ VAT inc</p></li>
+<li><p>Gala dinner menu, including drinks (red and white wine, water and coffee)from: 75€ VAT inc</p>
+</ul>
+</p></li>
+</ul>
+</div>
+<p></br> </br></p>
+<hr />
+</div>
+<div id="castillo-son-vida" class="section level3">
+<h3>Castillo Son Vida</h3>
+<iframe src="CASTILLO DE SON VIDA/CASTILLO DE SON VIDA.html" frameborder="0" width="100%" height="1100" scrolling="no">
+</iframe>
+<p></br></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<ul>
+<ul>
+<li><p>Double room for single use, including breakfast: 290€ VAT inc (rates per room and night)</p></li>
+<li><p>Twin room, including breakfast 340€ VAT inc (rates per room and night)</p>
+<p><em>Separated beds</em></p></li>
+<li><p>Touristic tax: 4,4€ VAT inc per person and night</p></li>
+<li><p>Lunch menus, including non alcoholic drinks from: 56,50€ VAT inc</p></li>
+<li><p>Gala dinner menu, including drinks (red and white wine, water and coffee)from: 90€ VAT inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><em>These rates are valid only with a minimum expense of 215€ per person in F&amp;B </em></p>
+<p></br> </br></p>
+<hr />
+</div>
+<div id="palma-bellver-melia" class="section level3">
+<h3>Palma Bellver Melia</h3>
+<iframe src="PALMA BELLVER MELIA/PALMA BELLVER MELIA.html" frameborder="0" width="100%" height="1200" scrolling="no">
+</iframe>
+<p></br></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<ul>
+<ul>
+<li><p>Double room for single use, including breakfast: 150€ VAT inc (rates per room and night)</p></li>
+<li><p>Twin room, including breakfast 162€ VAT inc (rates per room and night)</p>
+<p><em>Separated beds</em></p></li>
+<li><p>Touristic tax: 3,3€ VAT inc per person and night</p></li>
+<li><p>Lunch menus, including non alcoholic drinks from: 35€ VAT inc</p></li>
+<li><p>Gala dinner menu, including drinks (red and white wine, water and coffee)from: 56,50€ VAT inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+<hr />
+</div>
+</div>
+</div>
+<div id="activities" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Activities</h1>
+<div id="catamaran-sailing-and-bbq" class="section level2">
+<h2>Catamaran sailing and BBQ</h2>
+<p>At 9.45h Our guests will be transferred by bus to Palma’s Port where they will find the Taïti Catamaran. They will have the catamaran in exclusive for them. It is a big catamaran with 22,80m long and a capacity for 100 pax.</p>
+<p>From 10.00h to 15.00h they will enjoy a sailing activity. The catamaran has toilets and showers, so guests will be able to take a shower after they swim on the sea.</p>
+<p><img src = "https://cdn.getyourguide.com/img/tour_img-764782-146.jpg" width="100%"></p>
+<p><img src = "https://benidormfiesta.com/img/banana-acuatica-benidorm.jpg" width="100%"></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<ul>
+<ul>
+<li><p>Sailing activity from 10h to 15h: 3000€ VAT inc</p></li>
+<li><p>Welcome drink including a glass of cava or sangria and some snacks: 12€ VAT per person</p></li>
+<li><p>BBQ menu including grilled pork and chiken meat, bread, fresh salad buffet (including pasta and potato salad), fruit and pastries, from 25€ VAT inc</p></li>
+<li><p>Extra to add Grilled vegetables: 4€ per person VAT inc</p></li>
+<li><p>Open Bar (during the whole activity) including water, soft drinks, wine, cava, sagria, beer and coffee: 17€ VAT inc per person</p></li>
+<li><p>Water Activities: Banana, donuts, etc - during 3 hours guests will have the oportunity to try one or all these funny toys: 1300€ VAT inc</p></li>
+<li><p>2 x 50 seater bus 5 hours at disposal for the activity: 1240€ VAT inc</p></li>
+<li><p>1 x Russian speaking assistant: 295€ VAT inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="sierra-de-tramontana-excursion" class="section level2">
+<h2>Sierra de Tramontana excursion</h2>
+<p>Our Russian speaking guides will pick up guests at the hotel, we will have two buses with capacity for 50 pax each. We will split guests but the buses will do the same route and inside each bus one russian spekaing guide will explain them the history of the area.</p>
+<p>They will go to Valldemossa, a beautiful and tradicional village located in the mountains.They will visit La Cartuja inside.</p>
+<p><img src = "EXCURSIO/VALLDEMOSSA.jpg" width="100%"></p>
+<p>After the visit, they will go to Soller. Another beautiful village where they will see one of the oldests trams of Spain. It is a wooden tram that goes to Port Soller trough olives and oranges fields.</p>
+<p><img src = "EXCURSIO/SOLLER.jpg" width="100%"></p>
+<p>And once in Port Soller they will enjoy the relax of this village facing to the sea.</p>
+<p><img src = "EXCURSIO/PORT%20SOLLER.jpg" width="100%"></p>
+<p>Optionally, they will have lunch on a terrace with wonderful seaviews.</p>
+<p><img src = "EXCURSIO/REST.jpg" width="100%"></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<ul>
+<ul>
+<li><p>Excursion including two 50 seater buses, 2 Russian speaking guide, 2 small bottles of water per person and headphones: 40€ VAT per person for a group of 70 pax minimum.</p></li>
+<li><p>Optional extra guide: 295€ VAT inc</p></li>
+<li><p>Optional:Lunch: 3 courses menu including drinks and coffee, from 50€ VAT inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="back-to-traditions" class="section level2">
+<h2>Back to traditions</h2>
+<p>We suggest a visit La Granja Museum in Esporlas and enjoy a showcooking paella lunch.</p>
+<p><img src = "https://uh.gsstatic.es/sfAttachPlugin/409032.jpg" width="100%"></p>
+<p>La Granja d’esporlas is the museum of Malloca’s traditions and history. It is located 15km from Palma in the Serra de tramuntana mountains. La Granja is a beautiful 17th-century mansion surrounded by lush vegetation, gardens and natural springs, with a Majorican restaurant and a terrace café that guests will not want to leave.</p>
+<p>Guests will enjoy themselves while learning about traditional crafts, watching live demonstrations and knowing the farm animals.</p>
+<p><img src = "https://www.tegustaviajar.com/wp-content/uploads/2019/05/granja-de-esporles.jpg" width="100%"></p>
+<p><img src = "https://media.entrees.es/cf97d6292f621741f93102f194128132.jpg" width="100%"></p>
+<p></br></p>
+<p>After the visit and tasting some traditional products, guests will go to the garden area where they will find the professional chefs cooking big paellas. They will enjoy some drinks while they can see how the paella is elaborated.</p>
+<p>Then they will eat a 3 courses menu with the paella as main course.</p>
+<p><img src = "GRANJA/1.jpg" width="100%"></p>
+<p><img src = "GRANJA/2.jpg" width="100%"></p>
+<p></br></p>
+<p>In case of bad weather La Granja has different rooms where the lunch can be served</p>
+<p><img src = "https://www.ecestaticos.com/imagestatic/clipping/c76/77e/c7677ef8370b58007e4c354447c3d6d1/asi-es-la-granja-de-esporles-que-vende-carlos-segui.jpg?mtime=1488812639" width="100%"></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<ul>
+<ul>
+<li><p>Excursion including two 50 seater buses, 2 Russian speaking guide, 2 small bottles of water per person and headphones: 40€ VAT per person for a group of 70 pax minimum.</p></li>
+<li><p>Visit La Granja and tasting some traditional products: 20€ per pax VAT inc</p></li>
+<li><p>Optional: Paella show-cooking menu, including drinks from: 50€ VAT inc per person</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="guided-shopping-day-in-palma" class="section level2">
+<h2>Guided Shopping day in Palma</h2>
+<p>Palma has everything that a shopping paradise needs. The main shopping streets are in the old town,just above the cathedral.</p>
+<p>The three-lined, luxurious <strong>Paseo del Borne</strong>, one of the most important shopping hubs, offer mainly designer stores. St the end of Paseo del Borne there is <strong>Avenida de Jaume III</strong></p>
+<p>Here guests can buy fashonable clothes, shoes and other accessories of any price range.</p>
+<p>In the center of the old town of Palma, shopping fans will find more stores around <strong>Plaça Major</strong></p>
+<p><img src = "https://mk0abcmallorca71dgvy.kinstacdn.com/wp-content/uploads/2015/03/shopping-palma-massimo-dutti-01.jpg" width="100%"></p>
+<p>Our Russian speaking guides will pick up the group at the hotel, for this Shopping day we recommend to split guests in small groups of 15 pax maximum. The bus will transfer them to the city centre where they will start their tour.</p>
+<p><img src = "https://mk0abcmallorca71dgvy.kinstacdn.com/wp-content/uploads/2015/02/activities-palma-uterquee.jpg" width="100%"></p>
+<p>Between shop and shop, we would suggest to do a stop in one of the traditional tapas bar to have one glass of wine (or soft-drink) and two tapas.</p>
+<p></br></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<ul>
+<ul>
+<li><p>2 x 50 seater bus 5 hours at disposal for the activity: 1240€ VAT inc</p></li>
+<li><p>1 x Russian speaking guide: 295€ VAT inc * 5: 1475€ VAT inc</p></li>
+<li><p>Stop for a glass of wine and 2 tapas: 25€ per person VAT inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+</div>
+<div id="gala-dinner" class="section level1">
+<h1>Gala dinner</h1>
+<div id="main-venue-hotel-nixe-palace" class="section level2">
+<h2>Main Venue: Hotel Nixe Palace</h2>
+<p>In June the group can enjoy the perfect welcome drink at the hotel’s terrace, around the pool and with beautiful sea views.</p>
+<p><img src = "https://www.hotelmallorcanixepalace.com/wp-content/blogs.dir/1536/files/home/slider1.jpg" width="100%"></p>
+<p>The Gala dinner will be set atHotel Nixe’s Gala dinning room called Salon de Las Arenas. It has direct access to the terrace and wonderful sea views.</p>
+<p>Las Arenas room has a capacity for 100 pax, it will be room enough to set a stage and an area to dance.</p>
+<p><img src = "NIXE%20PALACE/GALA.jpg"></p>
+<p></br></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+Gala Dinner Menu from: 99,50€ VAT inc
+<ul>
+<ul>
+<li><p>Welcome cocktail - 30 minutes duration - including 6 appetizers and drinks</p></li>
+<li><p>Seated dinner menu including 3 courses, drinks (red and white wine, cava and mineral water) and coffee</p>
+</ul></li>
+</ul>
+<p><em>These rates are including Las Arenas room rental for the Gala Dinner</em></p>
+</p>
+</div>
+<p></br> </br></p>
+</div>
+<div id="theme-dinner-options" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Theme dinner options</h2>
+<div id="spanish-night" class="section level3">
+<h3>Spanish Night</h3>
+<p>Guests will be transported to a typical Spanish party, in an environment full of light and passion.</p>
+<p><strong>Decoration:</strong></p>
+<ul>
+<li><p>Traditional lanterns, flowers and colour cloths.</p></li>
+<li><p>Thematic Photocall including atrezzo - that will be used by guests during the welcome drink</p></li>
+<li><p>Garlands and small lanterns.</p></li>
+</ul>
+<p><img src = "http://www.gentevalencia.com/wp-content/uploads/2015/04/sevillanas-720x400.jpg" width="100%"></p>
+<p><strong>Artists</strong></p>
+<ul>
+<li><p>2 Flamenco dancers with the traditional dress will welcome guests</p></li>
+<li><p>A Spanish guitarrist will play during the welcome drink</p></li>
+<li><p>Flamenco Show during dinner, including one singer, Spanish guitar, Percussion and 2 flamenco dancers. The show is divided in different parts, the artists will change their dresses.</p></li>
+</ul>
+<p><img src = "https://www.turismoenrincon.es/wp-content/uploads/2017/12/orquestachekaraflamenca.jpg" width="100%"></p>
+<ul>
+<li>Flamenco Masterclass, after the dessert and before the party, our dancers will invite guests to dance with them. This is always a very funny moment, guests have a great time.</li>
+</ul>
+<p><img src = "https://www.thespainevent.com/wp-content/uploads/2017/04/FLAMENCO-CLASS-3-768x512.jpg" width="100%"></p>
+<p><strong>Party</strong></p>
+<ul>
+<li>DJ with Spanish and international music.</li>
+</ul>
+<p><img src = "http://www.timesquaremallorca.com/wp-content/uploads/2018/10/38514666_222205091818808_6900308562426200064_o-1024x684.jpg" width="100%"></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<p><strong>Spanish Night - 8.500€ VAT inc</strong></p>
+This is a package including:
+<ul>
+<ul>
+<li>Decoration</li>
+<li>Artists</li>
+<li>Stage, sound system and lights</li>
+<li><p>DJ</p>
+</ul>
+</p></li>
+</ul>
+<em>These rates are valid only for Hotel Nixe Palace - Las Arenas dining room, we can organize the same thematic party in any other venue but we would need to adjust the quotation depending on the size, if it is indoor or outdoor, etc</em>
+</div>
+<p></br> </br></p>
+</div>
+<div id="cabaret-moulin-rouge" class="section level3">
+<h3>Cabaret-Moulin Rouge</h3>
+<p>We will organize a “Belle epoque” party, very elegant but sensual, our guests will be transported to the Moulin Rouge.</p>
+<p><strong>Decoration</strong></p>
+<ul>
+<li>Red, black and golden cloths</li>
+<li>Thematic Photocall with attrezo - will be used during the welcome drink -</li>
+<li>Giant bubble cannon</li>
+</ul>
+<p><img src = "https://i0.wp.com/www.daledetalles.com/wp-content/uploads/2016/06/moulin-rouge6.jpg" width="100%"></p>
+<p><strong>Artists</strong></p>
+<ul>
+<li>2 artists with thematic dresses and stilts will welcome guests</li>
+<li>Short Circus shows will be played during the welcome cocktail</li>
+<li>Drag Queen Show, with music, dance and dressing changes. Artist with a great international career.</li>
+</ul>
+<p><img src = "DRAG.jpg" width="100%"></p>
+<p><strong>Party</strong></p>
+<ul>
+<li>Dj who will play Spanish and international music</li>
+<li>2 Gogós with themed dresses.</li>
+</ul>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<p><strong>Cabaret-Mouline Rouge Night - 10.500€ VAT inc</strong></p>
+This is a package including:
+<ul>
+<ul>
+<li>Decoration</li>
+<li>Artists</li>
+<li>Stage, sound system and lights</li>
+<li><p>DJ</p>
+</ul>
+</p></li>
+</ul>
+<em>These rates are valid only for Hotel Nixe Palace - Las Arenas dining room, we can organize the same thematic party in any other venue but we would need to adjust the quotation depending on the size, if it is indoor or outdoor, etc</em>
+</div>
+<p></br> </br></p>
+</div>
+</div>
+<div id="other-services" class="section level2">
+<h2>Other services</h2>
+<p><strong>Phorographer services</strong></p>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/7yAuG7wwgmQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div class="budget">
+
+<p>
+<p>Gala dinner service (from 18.00h to 22.00h): 650€ VAT inc</p>
+<ul>
+<ul>
+<li>one photographer</li>
+<li>Unlimited digital pictures</li>
+<li>Delivered via wetransfer or dropbox 3 days after the event</li>
+<li><p>Service during the welcome drink and the seated dinner.</p>
+</ul>
+</p></li>
+</ul>
+<em>These rates are valid for any of the venue options</em>
+</div>
+<p></br> </br></p>
+<hr />
+</div>
+<div id="alternative-venue" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Alternative Venue</h2>
+<div id="palace-in-palma-centre" class="section level3">
+<h3>Palace in Palma Centre</h3>
+<p>For this special evening, as an option to HOtel Nixe Palace we suggest a beautiful venue located in Palma city centre.</p>
+<p>We would welcome guests with a cocktail in the patio, it has a special atmosphere full of history.</p>
+<p><img src = "VENUE2/EXT.jpg" width="100%"></p>
+<p>After the welcome drink guests will go inside, to discover the magnificient room where they will have dinner.</p>
+<p><img src = "VENUE2/INT.png" width="100%"></p>
+<p></br></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+<p>Venue rental <em>(the building is huge, so the group will have only the 2 spaces in exclusive but they can be other events in other areas of the builidng)</em></p>
+<ul>
+<ul>
+<li><p>Patio and Chapel room: 9000€ VAT inc</p>
+</ul>
+</p></li>
+</ul>
+<p>
+<p>Gala Menu (Catering) from: 140€ VAT inc per person</p>
+<ul>
+<ul>
+<li>Staff (chefs, waiters, etc)</li>
+<li>Furniture</li>
+<li>White Table cloth</li>
+<li>Chiavari chairs</li>
+<li>Chosen menu</li>
+<li>Welcome cocktail</li>
+<li><p>Drinks</p>
+</ul>
+</p
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+</div>
+</div>
+<div id="transfers" class="section level1">
+<h1>Transfers</h1>
+<p><img src = "TRANSFERS/55.jpg"></p>
+<p><img src = "TRANSFERS/COCHE%20LUJO.jpg" width="360" ><img src = "TRANSFERS/VAN%20LUJO.jpg" width="360" align="right"></p>
+<p><strong>Rates</strong></p>
+<div class="budget">
+
+<p>
+Buses:
+<ul>
+<ul>
+<li><p>50 seater bus transfer from Palma Airport to Nixe Palace hotel: 282€ VAT inc <em>(we recommend to use 2 x 50 seater buses to have room enough for the luggage)</em></p></li>
+<li><p>50 seater bus 4hours at disposal for dinner: 650€ VAT inc</p></li>
+<li><p>30 seater bus 4 hours at disposal for dinner: 565€ VAT inc</p>
+</ul>
+</p></li>
+</ul>
+<p>
+Private VIP transfers:
+<ul>
+<ul>
+<li><p>Mercedes S Class or BMW serie 7 (maximum 4 pax) - transfer from the Airport to Nixe Palace: 103€ VAT inc</p></li>
+<li><p>Mercedes Viano (Max 7 pax) - transfer from the Airport to Hotel Nixe Palace: 135€ VAT inc</p></li>
+<li><p>Mercedes S Class or BMW serie 7 (maximum 4 pax) - 4 hours at disposal for dinner: 508€ VAT inc</p></li>
+<li><p>Mercedes Viano (Max 7 pax) - 4 hours at disposal for dinner: 567€ VAT inc</p>
+</ul>
+</p></li>
+</ul>
+<p>
+Russian speaking assistant:
+<ul>
+<ul>
+<li><p>Meet and greet at the Airport, transfer and assistance during check in: 250€ VAT inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p></br> </br></p>
+</div>
+<div id="terms-conditions" class="section level1">
+<h1>Terms &amp; Conditions</h1>
+<ul>
+<li><p>Rates valid for 2020.</p></li>
+<li><p>Net rates for Maximice</p></li>
+<li><p>For a group of minimum 70 pax.</p></li>
+<li><p>Cutting Edge Events management fee including in the detailed rates</p></li>
+<li><p>VAT included.</p></li>
+<li><p>No reservation has been done. Availability upon request.</p></li>
+</ul>
+</div>
+<div id="amaze-your-clients" class="section level1">
+<h1>Amaze your clients!!</h1>
+<div class="client_offer">
+
+<p>
+<p>Didn’t you just love our presentation ? Our first goal here at <em><strong>Cutting Edge Events</strong></em> is to help you <strong>win</strong> this business. You will most likely now collate the information contained in this website and make your own presentation to show your client<br></p>
+<p>
+Why not leverage our technology, and present your client with the same format ? As a <strong>totally free service</strong>, we offer you the possibility of doing the work for you
+</p>
+<p>
+We will:
+<ul>
+<ul>
+<li><p>Follow your instructions to add anything you want to be in your presentation, and delete anything that you don’t consider relevant</p></li>
+<li><p>Include your logo and company details, and remove all our company details</p></li>
+<li><p>We can even change some colors to mimic your corporate identity</p></li>
+<li><p>We will send you the new link, and it will look as if it was your work</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<style>
+
+.client_offer{
+background-color: #ee7600;
+color: white;
+padding: 10px;
+border: 1px solid black;
+margin-left: 25px;
+margin-right: 25px;
+border-radius: 10px;
+font-style: italic;
+}
+</style>
+<hr />
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
